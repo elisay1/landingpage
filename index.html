@@ -3,113 +3,334 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="estilo.css">
-    <title>Travel</title>
+    <title>Chilia Pataz</title>
 </head>
 
 <body>
-
-    <!-- Contenedor del anuncio emergente -->
-    <div id="popup" class="popup">
-        <div class="popup-content">
-            <span class="close" id="close">&times;</span>
-            <h2> ¡Apoya el Desarrollo de esta Página Web!</h2>
-            <p>Tu donación nos permitirá mantener el sitio web funcionando sin problemas, agregar nuevas características
-                y crear contenido más interesante. </p>
-
-            <!-- Botones de redes sociales -->
-            <div class="social-buttons">
-                <a href="https://www.facebook.com/chillia.bonitolugar.3/" class="social-button"><i
-                        class="fab fa-facebook-f"></i></a>
-                <a href="https://api.whatsapp.com/send?phone=+51921674886&text=%C2%A1Hola!%20Cual%20es%20tu%20consulta"
-                    class="social-button"><i class="fab fa-twitter"></i></a>
-                <a href="https://www.instagram.com/Chiliabonitolugar/" class="social-button"><i
-                        class="fab fa-instagram"></i></a>
+    <!-- Header y Nav -->
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo">
+                <h1>CHILIA PATAZ</h1>
             </div>
-
-            <!-- Botón de donación -->
-            <a href="https://api.whatsapp.com/send?phone=+51921674886&text=%C2%A1Hola!%20Quiero%20Apoyar%20En%20Desarrollo"
-                class="donate-button">Donar</a>
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav class="main-nav" id="mainNav">
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#destinos">Destinos</a></li>
+                    <li><a href="#tours">Tours</a></li>
+                    <li><a href="#emprendimientos">Emprendimientos</a></li>
+                    <li><a href="#colaboradores">Colaboradores</a></li>
+                </ul>
+            </nav>
         </div>
-    </div>
+    </header>
 
-
-    <section class="contenedor">
-        <div class="home">
-            <header>
-                <!-- <h1>Travel</h1> -->
-                <nav>
-                    <ul>
-                        <li><a href="#">Inicio</a></li>
-                        <li><a href="#">Nosotros</a></li>
-                        <li><a href="#">Contacto</a></li>
-                        <li><a href="#">Explorar</a></li>
-                    </ul>
-                </nav>
-                <div class="busqueda">
-                    <input type="text" placeholder="Buscar">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </div>
-                
-                
-            </header>
-
-            <div class="contenido">
-                <div class="linea-decorativa">
-                    <div class="circulo"></div>
-                    <div class="circulo"></div>
-                    <div class="circulo"></div>
-                </div>
-                <div class="left">
-                    <h2>CHILIA PATAZ</h2>
-                    <p>Chilia es uno de los trece distritos que pertenecen a la provincia de Pataz, en el departamento
-                        de La Libertad, de mayor población y extensión territorial.
-                        <br><br>
-                        El distrito de Chilia se encuentra ubicado, en el lado Nor-oeste de la Provincia de Pataz, a 450
-                        Kilómetros de la ciudad de Trujillo, departamento de la Libertad, de mayor población y extensión
-                        territorial de la Provincia.
-                        <br><br>
-                        El distrito de Chilia se encuentra ubicado al Nor-oeste a 57 Kilómetros del distrito de
-                        Tayabamba, capital de la provincia de Pataz, una latitud
-                        sur de 8º 07´ 19” y 77º 30´45” de latitud este. Su elevación es de 3,119 m.s.n.m.
-
-                    </p>
-
-                    <button>Explorar</button>
-
-                    <div class="redes">
-                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                    </div>
-                </div>
-
-                <div class="right">
-                    <div class="popular">
-                        Popular
-                    </div>
-                    <div class="contenedor-fotos">
-                        <img src="img/f1.webp" alt="">
-                        <img src="img/p2.webp" alt="">
-                        <img src="img/p3.webp" alt="">
-                    </div>
-                </div>
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h2>CHILIA PATAZ</h2>
+                <p>Descubre la magia de uno de los trece distritos de Pataz, donde la aventura y la tradición se
+                    encuentran</p>
+                <button class="cta-button">Explorar Destinos</button>
             </div>
         </div>
-
     </section>
 
-    <section class="about">
+    <!-- Destinos Turísticos -->
+    <section class="destinos" id="destinos">
+        <div class="section-container">
+            <h2><i class="fas fa-map-marked-alt"></i> Destinos Mágicos</h2>
+            <div class="destinos-grid">
+                <div class="destino-card reveal">
+                    <img src="img/nunamarca.jpg" alt="Arqueológico Nunamarca">
+                    <div class="destino-info">
+                        <h3>Centro Arqueológico Nunamarca</h3>
+                        <p>la ciudadela de Nunamarca ha cumplido varias décadas años de haber sido explorada y analizada
+                            por Julio C. Tello.</p>
+                        <div class="destino-meta">
+                            <span><i class="fas fa-clock"></i> 2 horas</span>
+                            <span><i class="fas fa-hiking"></i> Moderado</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Dentro de destinos-grid -->
+                <div class="destino-card reveal">
+                    <img src="img/apushallas.jpg" alt="Apushallas">
+                    <div class="destino-info">
+                        <h3>Majestuoso cerro Apushallas</h3>
+                        <p>Apushallas cerro amado, protector de nuestro pueblo, que tus vientos sigan susurrando
+                            esperanza y tus piedras contando historias.</p>
+                        <div class="destino-meta">
+                            <span><i class="fas fa-clock"></i> 6 horas</span>
+                            <span><i class="fas fa-hiking"></i> Moderado</span>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="destino-card reveal">
+                    <img src="img/catarataschinchupata.jpg" alt="CATARATAS DE MACHAYPUNKO">
+                    <div class="destino-info">
+                        <h3>CATARATAS DE MACHAYPUNKO</h3>
+                        <p>Punto panorámico con vistas espectaculares de todo el valle.</p>
+                        <div class="destino-meta">
+                            <span><i class="fas fa-clock"></i> 5 horas</span>
+                            <span><i class="fas fa-hiking"></i> Fácil</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="destino-card reveal">
+                    <img src="img/LAGUNA HUGIA.jpg" alt="Laguna Azul">
+                    <div class="destino-info">
+                        <h3>LAGUNA DE HUAGIA</h3>
+                        <p>Enblematica laguna de huagia, ubicada en las alturas de nuestro distrito de chillia.</p>
+                        <div class="destino-meta">
+                            <span><i class="fas fa-clock"></i> 4 horas</span>
+                            <span><i class="fas fa-hiking"></i> Moderado</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="destino-card reveal">
+                    <img src="img/f1.webp" alt="Bosque de Piedras">
+                    <div class="destino-info">
+                        <h3>Bosque de Piedras</h3>
+                        <p>Formaciones rocosas únicas que crean un paisaje místico y perfecto para fotografía.</p>
+                        <div class="destino-meta">
+                            <span><i class="fas fa-clock"></i> 2.5 horas</span>
+                            <span><i class="fas fa-hiking"></i> Desafiante</span>
+                        </div>
+                    </div>
+                </div> -->
+
+                <div class="destino-card reveal">
+                    <img src="img/corraldepiedras.JPG" alt="Bosque de Piedras">
+                    <div class="destino-info">
+                        <h3>CORRAL DE PIEDRAS</h3>
+                        <p> Ubicado al norte del anexo de Allaca, y al Noreste de Chilia, con una elevación de 3742 m
+                            SNM. Se identifica comocorral de piedras porque sus tupidas estructuras circulares,
+                            estánprotegidas por un muro perimetral de piedra de 1,80 a 2,00 m. de altura,decoradas con
+                            figuras en piedra.</p>
+                        <div class="destino-meta">
+                            <span><i class="fas fa-clock"></i> 5 horas</span>
+                            <span><i class="fas fa-hiking"></i> Desafiante</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </section>
+
+    <!-- Tours y Grupos -->
+    <section class="tours" id="tours">
+        <div class="section-container">
+            <h2><i class="fas fa-route"></i> Tours Disponibles</h2>
+            <div class="tours-grid">
+                <div class="tour-card reveal">
+                    <div class="tour-header">
+                        <img src="img/apushallas.jpg" alt="Tour 1">
+                        <!-- <span class="tour-price">S/. 150</span> -->
+                    </div>
+                    <div class="tour-content">
+                        <h3>Aventura en las Alturas</h3>
+                        <p>¡Aventúrate a conquistar Apushallas! 🏔️ Te invitamos a una experiencia única a más de 4,000 metros sobre el nivel del mar. Descubre uno de los picos más impresionantes de Chilia, donde las nubes se encuentran con la tierra y los paisajes te dejarán sin aliento. En 6 horas de recorrido grupal, vivirás la magia de nuestros Andes, respirarás el aire puro de las alturas y capturarás vistas panorámicas inolvidables. ¡Únete a nuestro grupo y prepárate para una aventura que recordarás toda la vida! 🌄✨</p>
+                        <ul class="tour-details">
+                            <li><i class="fas fa-calendar"></i> Duración: 8 + horas</li>
+                            <li><i class="fas fa-users"></i> Paseo en Grupo</li>
+                            <li><i class="fas fa-map-marker-alt"></i> Chillia Pataz</li>
+                        </ul>
+                        <a href="https://chat.whatsapp.com/I59P5wmSgba6bdFxZf4YoW" class="whatsapp-button-1" target="_blank" rel="noopener noreferrer">
+                            Unirse al Grupo de WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Repite tour-card para más tours -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Emprendimientos Locales -->
+    <section class="emprendimientos" id="emprendimientos">
+        <div class="section-container">
+            <h2><i class="fas fa-store"></i> Emprendimientos Locales</h2>
+            <div class="emprendimientos-grid">
+                <div class="emprendimiento-card reveal">
+                    <img src="img/texteleria.jpg" alt="Tejidos Tradicionales Chilia">
+                    <div class="emprendimiento-info">
+                        <h3>Tejidos Tradicionales Chilia</h3>
+                        <p>Ponchos, mantas y textiles tradicionales elaborados con lana de oveja y técnicas ancestrales.</p>
+                        <div class="social-links">
+                            <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-tiktok"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Dentro de emprendimientos-grid -->
+                <div class="emprendimiento-card reveal">
+                    <img src="img/lacteos.jpg" alt="Lácteos">
+                    <div class="emprendimiento-info">
+                        <h3>Productos Lácteos</h3>
+                        <p>Quesos, mantequilla y otros productos lácteos elaborados artesanalmente con leche de la zona.</p>
+                        <div class="social-links">
+                            <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-tiktok"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="emprendimiento-card reveal">
+                    <img src="img/agricultura.jpg" alt="Productos Agrícolas Chilia">
+                    <div class="emprendimiento-info">
+                        <h3>Productos Agrícolas de Chilia</h3>
+                        <p>Papa nativa, olluco, trigo y otros productos agrícolas cultivados en las alturas de Chilia.</p>
+                        <div class="social-links">
+                            <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-tiktok"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="emprendimiento-card reveal">
+                    <img src="img/f1.webp" alt="Hospedaje Rural">
+                    <div class="emprendimiento-info">
+                        <h3>Hospedaje Rural "Casa Andina"</h3>
+                        <p>Alojamiento familiar con experiencia auténtica de la vida en Chilia.</p>
+                        <div class="social-links">
+                            <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-tiktok"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div> -->
+                <!-- Repite emprendimiento-card para más emprendimientos -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Colaboradores y Donadores -->
+    <section class="colaboradores" id="colaboradores">
+        <div class="section-container">
+            <h2><i class="fas fa-handshake"></i> Nuestros Colaboradores</h2>
+            <div class="colaboradores-grid">
+                <div class="colaborador-card reveal">
+                    <img src="https://placehold.co/600x400" alt="Colaborador 1">
+                    <h3>Municipalidad Distrital de Chilia</h3>
+                    <p>Noticias oficiales y eventos del distrito</p>
+                </div>
+                <!-- Dentro de colaboradores-grid -->
+                <div class="colaborador-card reveal">
+                    <img src="https://s3-alpha.figma.com/profile/aa3382c6-ea0d-468b-b188-fd1b1781de96" alt="Municipalidad">
+                    <h3>ELISAY CODE</h3>
+                    <p>Desarrollo Web y Móvil - Impulsando la presencia digital de Chilia</p>
+                </div>
+
+                <div class="colaborador-card reveal">
+                    <img src="https://placehold.co/600x400" alt="Comunidad">
+                    <h3>Comunidad Campesina</h3>
+                    <p>Guardianes de nuestras tradiciones y territorios ancestrales como El Guaraco</p>
+                </div>
+
+                <div class="colaborador-card reveal">
+                    <img src="https://scontent-lim1-1.xx.fbcdn.net/v/t39.30808-1/355156979_772760807663871_5820610905652871843_n.jpg?stp=c0.5000x0.5000f_dst-webp_e15_p1040x1040_q70_tt1_u&efg=eyJ1cmxnZW4iOiJ1cmxnZW5fZnJvbV91cmwifQ&_nc_eui2=AeFQaCeGlsgHPqQ-buooVpxBn_TabNbj-MSf9Nps1uP4xIu1QO2_iDazME_K9LBWQf7aJe4uHYZUwzEJoEYEQaZ0&_nc_cid=0&_nc_ad=z-m&_nc_rml=0&_nc_ht=scontent-lim1-1.xx&_nc_cat=105&_nc_ohc=ESTLixiL_gUQ7kNvgGU536e&_nc_gid=ATbYOCOafMdbagjFG2QC5Mo&ccb=1-7&_nc_sid=fe756c&oh=00_AYCKr9yMoUcK8pyePcJfk92f84_q7MvcHQICcJGIMsCVzw&oe=676CFEE4"
+                        alt="Asociación">
+                    <h3>Únete ala comunidad</h3>
+                    <p>🤝 Unidos por el Desarrollo Turístico de Chilia</p>
+                </div>
+            </div>
+            <div class="donacion-info">
+                <h3>¿Quieres ser parte del desarrollo turístico?</h3>
+                <p>Tu apoyo nos ayuda a mejorar la experiencia turística en Chilia</p>
+                <br>
+                <!-- <button class="cta-button">Colaborar</button> -->
+                <a href="https://api.whatsapp.com/send?phone=+51921674886&text=%C2%A1Hola!%20Cual%20es%20tu%20consulta" class="cta-button">Colaborar</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer con Redes Sociales -->
+    <footer class="main-footer">
+        <!-- <div class="footer-waves">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#037381" fill-opacity="1" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,112C672,96,768,96,864,112C960,128,1056,160,1152,165.3C1248,171,1344,149,1392,138.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+            </svg>
+        </div> -->
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="footer-info">
+                    <h3>CHILIA PATAZ</h3>
+                    <p class="footer-slogan">Descubre la magia de nuestra tierra</p>
+                    <p class="footer-description">Ubicados en el corazón de Pataz, La Libertad, donde la naturaleza y la
+                        tradición se encuentran.</p>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h4>Enlaces Rápidos</h4>
+                <ul class="footer-links">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#destinos">Destinos</a></li>
+                    <li><a href="#tours">Tours</a></li>
+                    <li><a href="#emprendimientos">Emprendimientos</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Contacto</h4>
+                <div class="contact-info">
+                    <p><i class="fas fa-phone"></i> +51 921 674 886</p>
+                    <!-- <p><i class="fas fa-envelope"></i> info@chilia.com</p> -->
+                    <p><i class="fas fa-map-marker-alt"></i> Chilia, Pataz, La Libertad</p>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h4>Síguenos</h4>
+                <div class="social-networks">
+                    <a href="https://www.facebook.com/chillia.bonitolugar.3" class="social-network facebook"
+                        aria-label="Facebook">
+                        <i class="fab fa-facebook"></i>
+                        <span>Facebook</span>
+                    </a>
+                    <a href="https://www.tiktok.com/@chillia.pataz" class="social-network tiktok" aria-label="TikTok">
+                        <i class="fab fa-tiktok"></i>
+                        <span>TikTok</span>
+                    </a>
+                    <a href="https://www.instagram.com/chiliabonitolugar/" class="social-network instagram" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                        <span>Instagram</span>
+                    </a>
+                    <a href="https://api.whatsapp.com/send?phone=+51921674886&text=%C2%A1Hola!%20Cual%20es%20tu%20consulta" class="social-network whatsapp" aria-label="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                        <span>WhatsApp</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-bottom-content">
+                <p>&copy; 2024 Chilia. Todos los derechos reservados.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Términos y Condiciones</a>
+                    <a href="#">Política de Privacidad</a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
-
 </body>
 
 </html>
