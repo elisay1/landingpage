@@ -711,6 +711,7 @@ h2:hover i {
     width: 40px;
     height: 40px;
     display: flex;
+    text-decoration: none;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
