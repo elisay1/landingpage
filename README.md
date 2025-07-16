@@ -217,7 +217,7 @@ Para más información sobre turismo en Chilia:
 
 ## 👨‍💻 Desarrollador
 
-**Elisay Jiménez** - Desarrollador Full Stack
+**ELISAY CODE** - Desarrollador Full Stack
 
 - 🌐 Website: [elisaycode.com](https://elisaycode.com)
 - 📧 Email: elisaycode@gmail.com
